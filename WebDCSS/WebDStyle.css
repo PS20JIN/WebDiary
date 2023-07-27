@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.loginPage{
+  width: 400px;
+  height: 350px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+#loginPage > h2{
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+#loginPage > input{
+  width: 30%;
+  height: 48px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: #F8F8F8;
+}
+#loginPage > input::placeholder{
+  color: #D2D2D2;
+}
+#loginPage > [type="submit"]{
+  color: #fff;
+  font-size: 16px;
+  background-color: #000000;
+  margin-top: 0%;
+}
+#loginPage > input[type="checkbox"]{
+  display: none;
+}
+#loginPage > label{
+  color: #999999;
+}
+#loginPage input[type="checkbox"] + label{
+  cursor: pointer;
+  padding-left: 26px;
+  background-image: url("checkbox.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#loginPage input[type="checkbox"]:checked + label{
+  background-image: url("checkbox-active.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
